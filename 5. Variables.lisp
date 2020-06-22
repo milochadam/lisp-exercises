@@ -22,3 +22,5 @@
        (y '(1 2 3))
        (z '(p q 10)))
    (format t "x = ~a y = ~a z = ~a" x y z))
+
+;; https://stackoverflow.com/questions/19067632/difference-between-let-and-setq

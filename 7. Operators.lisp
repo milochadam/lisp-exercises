@@ -1,0 +1,42 @@
+;; https://www.tutorialspoint.com/lisp/lisp_operators.htm
+
+
+(let ((a 10)
+      (b 30))
+  (format t "~d + ~d = ~d ~%" a b (+ a b))
+  (format t "~d - ~d = ~d ~%" a b (- a b))
+  (format t "~d * ~d = ~d ~%" a b (* a b))
+  (format t "~d / ~d = ~d ~%" a b (/ a b))
+  (format t "~d mod ~d = ~d ~%" a b (mod a b))
+  (format t "~d rem ~d = ~d ~%" a b (rem a b))
+  (format t "~d incf ~d = ~d ~%" a b (incf a b))
+  (format t "~d decf ~d = ~d ~%" a b (decf a b))
+  )
+
+;; comparisons
+(write-line "")
+(let ((a 10)
+      (b 30))
+  (format t "a = ~d " a)
+  (format t "b = ~d ~%" b)
+  (format t "a = b: ~:[falmse~;true~]~%" (= a b))
+  (format t "a /= b: ~:[falmse~;true~]~%" (/= a b))
+  (format t "a > b: ~:[falmse~;true~]~%" (> a b))
+  (format t "a < b: ~:[falmse~;true~]~%" (< a b))
+  (format t "a >= b: ~:[falmse~;true~]~%" (>= a b))
+  (format t "a <= b: ~:[falmse~;true~]~%" (<= a b))
+  (format t "a max b: ~d ~%" (max a b))
+  (format t "a min b: ~d ~%" (min a b))
+
+  (format t "a and b: ~d ~%" (and a b))
+  (format t "a or b: ~d ~%" (or a b))
+  (format t "not a: ~d ~%" (not a))
+  (format t "not b: ~d ~%" (not b))
+  (format t "not 0: ~d ~%" (not 0))
+
+  (format t "a logand b: ~d ~%" (logand a b))
+  (format t "a logior b: ~d ~%" (logior a b))
+  (format t "a logxor b: ~d ~%" (logxor a b))
+  (format t "a lognor b: ~d ~%" (lognor a b))
+  (format t "a logeqv b: ~d ~%" (logeqv a b))
+  )
